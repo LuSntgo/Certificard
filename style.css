@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+
+body {
+  background: rgb(180, 249, 255);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 65px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #0e1d2f;
+  padding: 64px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Perfil {
+  display: flex;
+}
+
+/* ÍCONES */
+.icones-perfil {
+  margin: 3px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #0084a2;
+  transition: color 0.2s;
+}
+
+.icones-perfil:hover {
+  color: #9d91ab;
+}
+
+.foto {
+  border-radius: 400px;
+  max-height: 180px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  margin-left: 16px;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.title h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 400px;
+  padding: 8px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+.projetos {
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container-projeto h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 1rem;
+}
+
+.container-projeto ul {
+  margin-left: 1rem;
+  list-style: none;
+  color: #1c1c1c;
+}
+
+.container-projeto li {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-projeto a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.container-projeto a:hover {
+  color: #eab3c6;
+}
+
+.dark {
+  background-color: #574f4f;
+}
+
+.dark .container {
+  background: #342e2e;
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
+
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
